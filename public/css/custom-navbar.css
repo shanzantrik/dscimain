@@ -1,0 +1,19 @@
+/* Custom Navbar Styles - Overrides main styles */
+.navbar.transparent-navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar.transparent-navbar.scrolled {
+  background-color: #05102d !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Increase specificity to override */
+html body .navbar.transparent-navbar {
+  background-color: transparent !important;
+}
+
+html body .navbar.transparent-navbar.scrolled {
+  background-color: #05102d !important;
+}

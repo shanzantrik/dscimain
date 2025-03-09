@@ -1,0 +1,155 @@
+/*
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 4rem 0;
+	font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*/
+
+table {
+  width: 100%;
+  // max-width: 50rem;
+  border-collapse: separate;
+
+  tr:nth-child(even) th {
+    // color: #ccc;
+    // font-weight: normal;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  tr th.faded {
+    color: #ccc;
+    font-weight: normal;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 1rem;
+  }
+
+  th {
+    font-weight: normal;
+    border-top: thin dotted #ccc;
+
+    &.date-col {
+      width: 200px;
+      font-size: 16px;
+    }
+  }
+
+  th.no-border {
+    border-top: unset;
+  }
+
+  td {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    border-radius: 0.2rem;
+    transition: opacity 0.3s ease;
+  }
+
+  td>span {
+    font-size: 0.8em;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+  }
+}
+
+.stage-earth {
+  background-color: #62CDFF;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-mercury {
+  background-color: #9DC08B;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-venus {
+  background-color: #E49393;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-mars {
+  background-color: #BFACE2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-jupiter {
+  background-color: #81D4FA;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-saturn {
+  background-color: #050d23;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-light {
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-light-blue {
+  background-color: #C9EEFF;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-breaks {
+  background-color: #D8D8D8;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.stage-earth-green {
+  background-color: #1B9C85;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

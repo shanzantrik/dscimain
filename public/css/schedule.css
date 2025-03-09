@@ -1,0 +1,152 @@
+/*
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 4rem 0;
+	font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*/
+table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+table tr {
+  width: 100%;
+}
+
+table tr th.faded {
+  color: #ccc;
+  font-weight: normal;
+}
+
+table th,
+table td {
+  padding: 0.5rem 1rem;
+}
+
+table th {
+  font-weight: normal;
+  border-top: thin dotted #ccc;
+}
+
+table th.date-col {
+  width: 200px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+
+table th.no-border {
+  border-top: unset;
+}
+
+table td {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: 0.2rem;
+  transition: opacity 0.3s ease;
+}
+
+table td>span {
+  font-size: 0.8em;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+}
+
+.stage-earth {
+  background-color: #62CDFF;
+  transition: all 0.2s ease;
+}
+
+.stage-earth:hover {
+  transform: scale(1.1);
+}
+
+.stage-mercury {
+  background-color: #C5EBAA;
+  transition: all 0.2s ease;
+}
+
+.stage-mercury:hover {
+  transform: scale(1.1);
+}
+
+.stage-venus {
+  background-color: #E1AFD1;
+  transition: all 0.2s ease;
+}
+
+.stage-venus:hover {
+  transform: scale(1.1);
+}
+
+.stage-mars {
+  background-color: #BEADFA;
+  transition: all 0.2s ease;
+}
+
+.stage-mars:hover {
+  transform: scale(1.1);
+}
+
+.stage-jupiter {
+  background-color: #81D4FA;
+  transition: all 0.2s ease;
+}
+
+.stage-jupiter:hover {
+  transform: scale(1.1);
+}
+
+.stage-saturn {
+  background-color: #F3CA52;
+  transition: all 0.2s ease;
+}
+
+.stage-saturn:hover {
+  transform: scale(1.1);
+}
+
+.stage-light {
+  background-color: #f7f8fb;
+  transition: all 0.2s ease;
+}
+
+.stage-light:hover {
+  transform: scale(1.1);
+}
+
+.stage-light-blue {
+  background-color: #C9EEFF;
+  transition: all 0.2s ease;
+}
+
+.stage-light-blue:hover {
+  transform: scale(1.1);
+}
+
+.stage-breaks {
+  background-color: #f7f8fb;
+  transition: all 0.2s ease;
+}
+
+.stage-breaks:hover {
+  transform: scale(1.1);
+}
+
+.stage-earth-green {
+  background-color: #DADDB1;
+  transition: all 0.2s ease;
+}
+
+.stage-earth-green:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=schedule.css.map */
