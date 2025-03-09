@@ -121,7 +121,7 @@
     <div class="container">
       <span class="copyright">© 2025 Data Security Council of India</span>
       <span class="creation">
-        Website By <a href="https://www.zantrik.in/" target="_blank">Zantrik</a>
+        Website By <a href="https://www.shantanugoswami.online/" target="_blank">SG</a>
       </span>
     </div>
   </div>
