@@ -3,7 +3,8 @@
     "framework": null,
     "functions": {
         "api/*.php": {
-            "runtime": "vercel-php@0.6.0"
+            "runtime": "vercel-php@0.6.0",
+            "maxDuration": 30
         }
     },
     "routes": [
@@ -30,6 +31,19 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        }
+    ],
+    "builds": [
+        {
+            "src": "api/build.sh",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "public"
+            }
+        },
+        {
+            "src": "api/*.php",
+            "use": "vercel-php@0.6.0"
         }
     ],
     "env": {
