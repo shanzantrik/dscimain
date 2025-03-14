@@ -1642,8 +1642,9 @@
   }
 </style>
 
+{{--
 <!-- Preloader -->
-@include('partials.preloader')
+@include('partials.preloader') --}}
 
 <!-- Mobile Menu -->
 <aside class="mobile-menu">
