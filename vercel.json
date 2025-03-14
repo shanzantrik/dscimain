@@ -50,8 +50,5 @@
         "SESSION_DRIVER": "cookie",
         "FILESYSTEM_DISK": "local",
         "APP_KEY": "${APP_KEY}"
-    },
-    "buildCommand": "npm run build && composer install --no-dev --optimize-autoloader",
-    "outputDirectory": "public",
-    "installCommand": "npm install && composer install"
+    }
 }
