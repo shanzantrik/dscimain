@@ -21,6 +21,7 @@
         "now-php": "^0.0.10",
         "source-sans": "^3.46.0",
         "source-sans-pro": "^3.6.0",
-        "three": "^0.174.0"
+        "three": "^0.174.0",
+        "vercel-php": "^0.7.1"
     }
 }
