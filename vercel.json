@@ -1,25 +1,46 @@
 {
     "version": 2,
-      "framework": null,
+    "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.1" }
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.1"
+        }
     },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
+    "builds": [
+        { "src": "public/**/*", "use": "@vercel/static" },
+        { "src": "storage/app/public/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
+        { "src": "/storage/(.*)", "dest": "/storage/app/public/$1" },
+        { "src": "/images/(.*)", "dest": "/public/images/$1" },
+        { "src": "/videos/(.*)", "dest": "/public/videos/$1" },
+        { "src": "/css/(.*)", "dest": "/public/css/$1" },
+        { "src": "/js/(.*)", "dest": "/public/js/$1" },
+        { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
+        { "src": "/robots.txt", "dest": "/public/robots.txt" },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php",
+            "headers": {
+                "Cache-Control": "s-maxage=0",
+                "Content-Security-Policy": "upgrade-insecure-requests",
+                "X-Frame-Options": "DENY",
+                "X-Content-Type-Options": "nosniff"
+            }
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://dscimain.vercel.app",
-
+        "ASSET_URL": "https://dscimain.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
