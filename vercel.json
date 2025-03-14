@@ -49,6 +49,6 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "FILESYSTEM_DISK": "local",
-        "APP_KEY": "${APP_KEY}"
+        "APP_KEY": "base64:WAjLU57RuJT8C3MwMy7Fz0pp1iifw+yA38DPivfsdzA="
     }
 }
