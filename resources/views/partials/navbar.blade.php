@@ -1,4 +1,4 @@
-<nav class="navbar transparent-navbar" id="navbar">
+<nav class="navbar brand-navbar" id="navbar">
   <div class="container-fluid px-3">
     <div class="logo" style="display: flex; align-items: center;">
       <a href="#home_banner">
@@ -50,9 +50,42 @@
   /* Navbar Styles */
   .navbar {
     padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+
+  .navbar.brand-navbar {
+    background-color: rgba(165, 108, 255, 0.95) !important;
+  }
+
+  .navbar.scrolled {
+    background-color: rgba(165, 108, 255, 0.11) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   /* Menu Item Styles */
+  .site-menu {
+    display: flex;
+    align-items: right;
+  }
+
+  .site-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-menu ul li {
+    margin: 0 15px;
+  }
+
   .site-menu ul li a {
     font-size: 15px;
     font-weight: 500;
@@ -62,7 +95,7 @@
   }
 
   .site-menu ul li a:hover {
-    color: #01B380;
+    color: #cff209;
   }
 
   /* Dropdown Button Styles */
@@ -106,28 +139,10 @@
   }
 
   .dropdown:hover .dropbtn {
-    color: #01B380;
-    border-color: #01B380;
+    color: #cff209;
+    border-color: #cff209;
   }
 
-  /* Book Seat Button */
-  .book-seat-btn {
-    display: inline-block;
-    background-color: #01B380;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .book-seat-btn:hover {
-    background-color: #ffffff;
-    color: #05102d;
-    text-decoration: none;
-  }
 
   /* Mobile Menu Button */
   .hamburger-menu {

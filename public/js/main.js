@@ -7,7 +7,7 @@
     $(window).on('load', function () {
         // Simulate loading progress
         let counter = 0;
-        const interval = setInterval(function() {
+        const interval = setInterval(function () {
             counter += 2; // Increase by 2 for faster loading
             if (counter >= 100) {
                 clearInterval(interval);
@@ -18,7 +18,7 @@
                 $('#loader-progress').css('width', counter + '%');
 
                 // Apply loaded state after slight delay for transition to complete
-                setTimeout(function() {
+                setTimeout(function () {
                     $('body').addClass('page-loaded');
                     $('.preloader').fadeOut(500);
                 }, 300);
@@ -33,7 +33,7 @@
     });
 
     // Mobile Menu Toggle
-    $('.hamburger-menu .menu').on('click', function() {
+    $('.hamburger-menu .menu').on('click', function () {
         $('.mobile-menu').toggleClass('active');
         if ($('.mobile-menu').hasClass('active')) {
             $('.mobile-menu .inner').css({
@@ -49,16 +49,16 @@
     });
 
     // Dropdown functionality
-    $('.dropdown .dropbtn').on('mouseover', function() {
+    $('.dropdown .dropbtn').on('mouseover', function () {
         $('#myDropdown').addClass('show');
     });
 
-    $('.dropdown').on('mouseleave', function() {
+    $('.dropdown').on('mouseleave', function () {
         $('#myDropdown').removeClass('show');
     });
 
     // Pin navbar on scroll
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 100) {
             $('.header').addClass('pinned');
         } else {
@@ -67,7 +67,7 @@
     });
 
     // Smooth scrolling for anchor links
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
         if (this.hash !== '') {
@@ -83,15 +83,17 @@
     });
 
     // Initialize slick carousel for speakers
-    if ($('.your-class').length) {
-        $('.your-class').slick({
+    if ($('.speakers-slider').length) {
+        $('.speakers-slider').slick({
             dots: true,
             infinite: true,
-            speed: 300,
+            speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
+            cssEase: 'linear',
+            pauseOnHover: true,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -119,9 +121,9 @@
     }
 
     // Filter functionality for speakers
-    $('#slidename').on('keyup', function() {
+    $('#slidename').on('keyup', function () {
         const value = $(this).val().toLowerCase();
-        $('.slick-slide').filter(function() {
+        $('.speaker-item').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });
     });

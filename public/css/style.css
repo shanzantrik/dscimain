@@ -2,9 +2,9 @@
 
 
 :root {
-  --primary-color: #01B380;
-  --secondary-color: #fcd142;
-  --dark-bg: #05102d;
+  --primary-color: #cff209;
+  --secondary-color: #733be2;
+  --dark-bg: #733be2;
   --light-text: #ffffff;
   --transition: all 0.3s ease;
 }
@@ -134,6 +134,11 @@ body.page-loaded .preloader {
   max-height: 50px;
 }
 
+.site-menu {
+  display: flex;
+  align-items: right;
+}
+
 .site-menu ul {
   display: flex;
   list-style: none;
@@ -182,11 +187,11 @@ body.page-loaded .preloader {
   z-index: 100;
   padding: 20px 0;
   transition: var(--transition);
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
 }
 
 .navbar.pinned {
-  background-color: #05102d !important;
+  background-color: rgba(165, 108, 255, 0.11) !important;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -234,7 +239,7 @@ body.page-loaded .preloader {
   font-size: 15px;
   font-weight: 500;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #A56CFF;
   border-radius: 30px;
   padding: 10px 15px;
   cursor: pointer;
@@ -250,7 +255,7 @@ body.page-loaded .preloader {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -279,8 +284,8 @@ body.page-loaded .preloader {
 /* Book Seat Button */
 .book-seat-btn {
   display: inline-block;
-  background-color: #01B380 !important;
-  color: white !important;
+  background-color: #cff300 !important;
+  color: #A56CFF !important;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 20px !important;
@@ -291,7 +296,9 @@ body.page-loaded .preloader {
 
 .book-seat-btn:hover {
   background-color: #ffffff !important;
-  color: #05102d !important;
+  color: #A56CFF !important;
+  border: 1px solid #A56CFF;
+  text-decoration: none;
 }
 
 /* Mobile Menu styles */
@@ -607,19 +614,19 @@ body.page-loaded .preloader {
 
 /* Additional navbar styles */
 .navbar {
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
 }
 
 .navbar.pinned {
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
 }
 
 .dropdown-content {
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
 }
 
 .mobile-menu {
-  background-color: #05102d !important;
+  background-color: #A56CFF !important;
 }
 
 /* Font size consistency */
@@ -646,8 +653,8 @@ body.page-loaded .preloader {
 }
 
 .book-seat-btn {
-  background-color: #01B380 !important;
-  color: white !important;
+  background-color: #cff300 !important;
+  color: #A56CFF !important;
   padding: 10px 20px !important;
   border-radius: 30px !important;
   text-decoration: none !important;
@@ -656,5 +663,5 @@ body.page-loaded .preloader {
 
 .book-seat-btn:hover {
   background-color: #ffffff !important;
-  color: #05102d !important;
+  color: #A56CFF !important;
 }

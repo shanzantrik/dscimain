@@ -47,13 +47,13 @@
   <!-- Force navbar transparency with highest specificity -->
   <style>
     html body .navbar.transparent-navbar {
-      background-color: transparent !important;
-      background: transparent !important;
+      background-color: #A56CFF !important;
     }
 
     html body .navbar.scrolled {
-      background-color: #05102d !important;
-      background: #05102d !important;
+      background-color: rgba(165, 108, 255, 0.66) !important;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
     }
   </style>
 
