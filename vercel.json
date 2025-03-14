@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0"
+            "use": "vercel-php@0.7.1"
         },
         {
             "src": "public/**",
@@ -52,8 +52,8 @@
         "APP_NAME": "Laravel",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://dscimain-9sq2z50ve-shaanjyots-projects.vercel.app",
-        "ASSET_URL": "https://dscimain-9sq2z50ve-shaanjyots-projects.vercel.app",
+        "APP_URL": "https://dscimain.vercel.app",
+        "ASSET_URL": "https://dscimain.vercel.app",
         "FORCE_HTTPS": "true",
         "LOG_CHANNEL": "stderr",
         "CACHE_DRIVER": "array",
