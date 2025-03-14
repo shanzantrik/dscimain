@@ -1646,6 +1646,7 @@
 <!-- Preloader -->
 @include('partials.preloader') --}}
 
+{{--
 <!-- Mobile Menu -->
 <aside class="mobile-menu">
   <svg viewBox="0 0 600 1080" preserveAspectRatio="none" version="1.1">
@@ -1678,7 +1679,7 @@
       </ul>
     </div>
   </div>
-</aside>
+</aside> --}}
 
 <!-- Navbar -->
 @include('partials.navbar')
